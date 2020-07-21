@@ -7,7 +7,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://deployment-test-backend-042020.herokuapp.com/flags')
+    fetch('https://deployment-demo-backend-042020.herokuapp.com/flags')
     .then(res => res.json())
     .then(flags => this.setState({flags: flags}))
   }
